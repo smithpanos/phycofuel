@@ -87,6 +87,22 @@
       color: var(--green);
     }
 
+    .nav-links .nav-cta {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 14px;
+      border-radius: 6px;
+      background: var(--green);
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    .nav-links .nav-cta:hover {
+      color: #ffffff;
+      background: #0f5939;
+    }
+
     section {
       padding: 88px 24px;
     }
@@ -182,6 +198,46 @@
 
     .btn:hover {
       border-color: var(--green);
+    }
+
+    .btn-supply {
+      background: #0f5939;
+      border-color: #0f5939;
+      color: #ffffff;
+      min-height: 54px;
+      padding: 0 24px;
+      font-size: 15px;
+    }
+
+    .btn-supply:hover {
+      background: #0b442c;
+      border-color: #0b442c;
+    }
+
+    .supply-callout {
+      margin-top: 24px;
+      max-width: 590px;
+      padding: 18px;
+      border: 1px solid #b7d5c4;
+      border-left: 5px solid var(--green);
+      border-radius: 8px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .supply-callout strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .supply-callout span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
     }
 
     .hero-image {
@@ -492,6 +548,11 @@
         right: 16px;
         bottom: 16px;
       }
+
+      .supply-callout {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -507,7 +568,7 @@
         <a href="#about">Διαδικασία</a>
         <a href="#technology">Μονάδα</a>
         <a href="#video">MVP Video</a>
-        <a href="waitlist.html">Προμήθεια</a>
+        <a class="nav-cta" href="waitlist.html">Προμήθεια biofuel</a>
         <a href="#future">Στόχος</a>
       </div>
     </div>
@@ -529,8 +590,16 @@
         <div class="buttons">
           <a class="btn btn-primary" href="#technology">Δείτε τη μονάδα</a>
           <a class="btn btn-secondary" href="#video">Δείτε το MVP Video</a>
-          <a class="btn btn-secondary" href="waitlist.html">Πού μπορώ να προμηθευτώ biofuel;</a>
+          <a class="btn btn-supply" href="waitlist.html">Πού μπορώ να προμηθευτώ biofuel;</a>
         </div>
+
+        <a class="supply-callout" href="waitlist.html">
+          <div>
+            <strong>Ενδιαφέρεστε για προμήθεια;</strong>
+            <span>Δηλώστε ενδιαφέρον και ενημερωθείτε πρώτοι όταν ξεκινήσει η διάθεση.</span>
+          </div>
+          <span>Δείτε περισσότερα</span>
+        </a>
       </div>
 
       <div class="hero-image">
